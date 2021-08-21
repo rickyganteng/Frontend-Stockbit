@@ -5,6 +5,6 @@ Penjelasan aplikasi yang saya buat :
 
 Untuk menjalankan aplikasi :
 
-- Download project ini dengan cara git clone 'https://github.com/rickyganteng/Frontend-Stockbit.git'
+- Download project ini dengan cara `git clone https://github.com/rickyganteng/Frontend-Stockbit.git`
 - buka CMD atau terminal
 - menulis npm install atau yarn install
