@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <p>halo bro</p>
+      <p>halo </p>
     </>
   );
 
