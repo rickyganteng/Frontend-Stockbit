@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family-Poppins:wght@200;400;600&display-swap");
+
+.movie-container {
+  display: flex;
+}
+.movie {
+  margin: 2rem;
+  width: 200px;
+}
+.movie img {
+  max-width: 100%;
+}
+.btdetail {
+  margin: 20px;
+}

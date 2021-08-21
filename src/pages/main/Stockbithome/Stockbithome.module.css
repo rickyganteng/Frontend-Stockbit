@@ -1,0 +1,4 @@
+.moviecontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
