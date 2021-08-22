@@ -2,17 +2,30 @@ import React, { Component } from "react";
 import style from "./movie.module.css"
 import { Button, Card } from "react-bootstrap";
 import { withRouter } from "react-router-dom";
-
+import axiosApiIntances from "../utils/axios"
 
 class movie extends Component {
+
   handleMovieDetail = (id) => {
-    console.log(id);
+    axiosApiIntances
+      .get(`&i=${id}`)
+      .then((res) => {
+        this.setState({
+          data: {
+            ...this.state.data,
+            ...res.data.data[0],
+          },
+        });
+      })
+      .catch((err) => {
+        return [];
+      });
     this.props.history.push(`/stockbitdetail/${id}`);
   };
 
   render() {
     const { Title, Type, Year, Poster, imdbID } = this.props.data
-    console.log(this.props.data);
+
     return (
       <>
         <Card style={{ margin: "1rem" }}>
@@ -36,6 +49,5 @@ class movie extends Component {
     )
   }
 }
-// < p > this is a movie comp</p>;
 
 export default withRouter(movie);

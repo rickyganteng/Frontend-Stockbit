@@ -2,7 +2,7 @@ import axios from "axios";
 require("dotenv").config();
 
 const axiosApiIntances = axios.create({
-  baseURL: "http://www.omdbapi.com?apikey=faf7e5bb",
+  baseURL: "http://www.omdbapi.com?apikey=b45c11ae&",
 });
 
 // Add a request interceptor

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-// import { Search } from "react-bootstrap-icons";
 import Movie from "../../../components/movie"
 import style from "./Stockbithome.module.css"
+import { withRouter } from "react-router-dom";
+
 
 function App() {
   // const moviess = ["1", "2", "3"]
@@ -15,16 +16,13 @@ function App() {
       fetch(`http://www.omdbapi.com?apikey=faf7e5bb&s=${seacrhTerm}`)
         .then((res) => res.json())
         .then((data) => {
-          console.log(data)
           setMovies(data.Search);
         })
-        .catch(() => {
-          console.log("Name movie not found");
+        .catch((error) => {
+          console.log(error);
         });
 
       setSearchTerm("");
-      // this.props.history.push(`/stockbit`);
-
     }
   };
 
@@ -54,19 +52,13 @@ function App() {
             })
 
           ) : (
-            <p>Movie Not Found !!!</p>
+            ""
           )}
         </div>
       </div>
-
-      {/* // <div>
-        //   {moviess.map((movie => (
-        //     <Movie />
-        //   )))}
-        // </div> */}
     </>
   );
 
 }
 
-export default App;
+export default withRouter(App);
