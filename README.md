@@ -7,6 +7,8 @@ Penjelasan aplikasi yang saya buat :
 - Halaman utama yaitu menampilkan form pencarian, ketikkan nama film yang akan dicari.
 - kemudian ketik enter akan muncul hasil dari nama film yang dicari.
 - tombol detail menampilkan data detail dari film tersebut. 
+
+
 Untuk menjalankan aplikasi :
 
 - Download project ini dengan cara `git clone https://github.com/rickyganteng/Frontend-Stockbit.git`
