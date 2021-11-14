@@ -5,8 +5,10 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./redux/store";
 
-import StockbitHome from "./pages/main/Stockbithome/Stockbithome"
-import StockbitDetail from "./pages/main/Stockbitdetail/Stockbitdetail"
+import StockbitHome from "./pages/Stockbithome/Stockbithome"
+import StockbitDetail from "./pages/Stockbitdetail/Stockbitdetail"
+import Main from "./pages/main/main"
+import Jajal from "./pages/jajal"
 
 class App extends Component {
   render() {
@@ -15,6 +17,16 @@ class App extends Component {
         <PersistGate loading={null} persistor={persistor}>
           <Router>
             <Switch>
+              <Route
+                path="/jajal"
+                exact
+                component={Jajal}
+              />
+              <Route
+                path="/"
+                exact
+                component={Main}
+              />
               <Route
                 path="/stockbithome"
                 exact

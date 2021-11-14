@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import style from "./Stockbitdetail.module.css"
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import { getmoviebyId } from "../../../redux/action/movie"
+import { getmoviebyId } from "../../redux/action/movie"
 import { Container, Row, Col, Button } from "react-bootstrap";
 class detail extends Component {
   constructor(props) {

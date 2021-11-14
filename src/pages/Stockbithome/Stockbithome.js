@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Movie from "../../../components/movie"
+import Movie from "../../components/movie"
 import style from "./Stockbithome.module.css"
 import { withRouter } from "react-router-dom";
 

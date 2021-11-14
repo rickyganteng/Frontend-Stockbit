@@ -1,0 +1,15 @@
+.moviecontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center {
+  align-items: center;
+  margin-right: -50px;
+}
+.borderCard {
+  border-style: solid;
+  border-width: 10px;
+  width: 370px;
+  height: 310px;
+  border-color: lightgray;
+}
